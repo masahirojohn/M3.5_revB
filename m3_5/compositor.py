@@ -154,4 +154,4 @@ def run(POSE_TIMELINE_JSON: str,
 
     cap.release(); vw.release()
     pd.DataFrame(rows).to_csv(log_csv, index=False)
-    return out_mp4, log_cs
+    return out_mp4, log_csv
