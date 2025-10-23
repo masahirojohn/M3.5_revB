@@ -57,7 +57,7 @@ if __name__ == "__main__":
         OUT_DIR=OUT,
         canvas=CanvasSpec(1280,720),
         sync=SyncParams(demo_fps=25, strict_bg_sync=True, bg_fps=25, bg_start_ms=0),
-        rule=RuleParams(),
+        rule=RuleParams(scale_base=2.0, scale_per_bbox=0.8),
         blend=BlendParams(),
         mode="rule"
     )
